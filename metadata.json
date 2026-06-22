@@ -1,0 +1,6 @@
+{
+  "name": "Mohammad Bawadi Portfolio",
+  "description": "Interactive architectural and interior design portfolio of Mohammad Bawadi, featuring custom visual renders, technical CAD blueprints, interactive mood boards, and space-planning calculators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
