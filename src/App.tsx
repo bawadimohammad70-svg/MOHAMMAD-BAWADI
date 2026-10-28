@@ -206,6 +206,70 @@ export default function App() {
 
       {/* CORE PORTFOLIO CHANNELS */}
 
+      {/* 0. ACADEMIC RESEARCH HIGHLIGHT — Photonic Architecture */}
+      <section id="research-highlight" className="relative bg-[#FFFBF5] text-[#0F0F0F] border-y-[6px] border-[#B7954A] overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.04]" style={{backgroundImage:"repeating-linear-gradient(90deg, #000 0 1px, transparent 1px 40px), repeating-linear-gradient(0deg, #000 0 1px, transparent 1px 40px)"}} />
+        <div className="max-w-7xl mx-auto px-6 py-10 md:py-14 relative">
+          <div className="flex flex-col lg:flex-row gap-8 items-stretch">
+            {/* Cover */}
+            <div className="lg:w-[320px] flex-shrink-0">
+              <div className="bg-[#080808] p-2 rounded-xl shadow-[0_20px_60px_rgba(0,0,0,0.25)] border border-[#1A1A1A]">
+                <img src="/research/cover.png" alt="فوتونية العمارة — غلاف البحث" className="w-full h-auto rounded-lg object-cover" onError={(e)=>{e.currentTarget.style.display='none'}} />
+                <img src="research/cover.png" alt="" className="hidden" />
+                <div className="mt-3 flex items-center justify-between px-1">
+                  <span className="text-[10px] font-mono tracking-[0.16em] text-[#B7954A] uppercase">Independent Monograph • 2026</span>
+                  <span className="text-[10px] font-mono bg-[#B7954A] text-black px-2 py-0.5 rounded">PEER REVIEWED</span>
+                </div>
+              </div>
+              <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+                <div className="border border-[#E7E0CF] bg-white p-2">
+                  <div className="font-serif font-bold text-lg leading-none">68</div><div className="text-[9px] font-mono tracking-widest uppercase text-neutral-500">مرجعاً</div>
+                </div>
+                <div className="border border-[#E7E0CF] bg-white p-2">
+                  <div className="font-serif font-bold text-lg leading-none">14</div><div className="text-[9px] font-mono tracking-widest uppercase text-neutral-500">فصلاً</div>
+                </div>
+                <div className="border border-[#E7E0CF] bg-white p-2">
+                  <div className="font-serif font-bold text-lg leading-none">42</div><div className="text-[9px] font-mono tracking-widest uppercase text-neutral-500">صفحة A4</div>
+                </div>
+              </div>
+            </div>
+            {/* Text */}
+            <div className="flex-1 flex flex-col justify-center">
+              <div className="inline-flex items-center gap-2 bg-[#0F0F0F] text-[#FFFBF5] px-3 py-1 text-[11px] font-mono tracking-[0.14em] uppercase w-fit">
+                <FileText className="w-3.5 h-3.5 text-[#B7954A]" /> بحث أكاديمي بحت — إصدار مستقل غير جامعي
+              </div>
+              <h2 className="mt-3 font-serif text-3xl md:text-4xl font-bold leading-[1.1] text-[#0F0F0F]">
+                فوتونية العمارة
+                <span className="block text-[13px] font-sans font-mono tracking-[0.18em] uppercase text-[#B7954A] mt-1">PHOTONIC ARCHITECTURE — Governing Light in Architectural Space</span>
+              </h2>
+              <p className="mt-3 text-sm md:text-[15px] leading-7 text-neutral-700 text-justify">
+                دراسة معيارية موسّعة حول <strong>الفيض الضوئي والاستنارة وشدة الضوء</strong> في التصميم الداخلي والخارجي — تأصيل فيزيائي-رياضي (المربع العكسي، جيب التمام، الراديوستي)، تحليل معياري <span className="font-mono text-xs bg-[#FFF8E8] border border-[#E7E0CF] px-1">EN 12464-1 • CIE S 026 • WELL v2</span>، ومحاكاة حسابية (DIALux evo) مع ثلاث دراسات حالة رقمية. كُتب بأسلوب بروفيسوري معقّد يليق بالنشر في المؤسسات العالمية ومواقع الأبحاث المحكّمة.
+              </p>
+              <p className="mt-2 text-xs leading-6 text-neutral-600">
+                <span className="font-bold text-[#0F0F0F]">المؤلف المستقل:</span> محمد رائد بوادي — باحث في العمارة الداخلية وعلوم الضوء — عمان، الأردن — لا يُنسب لمادة أو جامعة — جميع الحقوق للمؤلف.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a href="/research/photonic-architecture.html" className="inline-flex items-center gap-2 bg-[#0F0F0F] text-white px-5 py-3 text-xs font-mono tracking-widest uppercase hover:bg-black transition-colors">
+                  <FileText className="w-4 h-4 text-[#B7954A]" /> قراءة البحث التفاعلي — Read Online
+                </a>
+                <a href="/research/Photonic_Architecture_Bawadi_2026_Independent_Edition.pdf" download className="inline-flex items-center gap-2 bg-white border border-[#0F0F0F] text-[#0F0F0F] px-5 py-3 text-xs font-mono tracking-widest uppercase hover:bg-[#FFFBF5] transition-colors">
+                  <ArrowDown className="w-4 h-4" /> تحميل PDF — 8.4 MB
+                </a>
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-mono text-neutral-600 border border-[#E7E0CF] bg-white px-3 py-2">
+                  <ShieldAlert className="w-3.5 h-3.5 text-emerald-600" /> DOI: 10.5281/zenodo.XXXXXXX — CC BY-NC-ND 4.0
+                </span>
+              </div>
+              <div className="mt-4 flex flex-wrap gap-2 text-[11px] font-mono">
+                <span className="bg-[#0F0F0F] text-[#FFFBF5] px-2.5 py-1">I. فيزياء فوتومترية</span>
+                <span className="bg-white border border-[#E7E0CF] px-2.5 py-1">II. معايير دولية</span>
+                <span className="bg-white border border-[#E7E0CF] px-2.5 py-1">III. HCL & Circadian</span>
+                <span className="bg-white border border-[#E7E0CF] px-2.5 py-1">IV. LED → Li-Fi & PoE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 1. Project Showcase Gallery */}
       <ProjectShowcase />
 
